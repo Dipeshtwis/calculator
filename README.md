@@ -27,12 +27,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Project Screenshot <a name = "sc"></a>
 
-![Main Menu](src/assets/img/menu.png)
+![First Look](src/assets/img/menu.png)
 
 
 ## Live Demo Link <a name = "ll"></a>
 
-[Link Demo]()
+[Link Demo](https://deepcalculator.herokuapp.com/)
 
 
 ## Getting Started <a name = "gs"></a>
