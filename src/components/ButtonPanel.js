@@ -2,8 +2,7 @@
 import Button from './Button';
 
 /* eslint-enable no-unused-vars */
-function ButtonPanel() {
-  return (
+const ButtonPanel = () => (
     <div class = "calc">
       <div className = "btn-show">
       < Button name = 'AC'/>
@@ -37,7 +36,6 @@ function ButtonPanel() {
       < Button name = ''/>
     </div>
     </div>
-  );
-}
+);
 
 export default ButtonPanel;

@@ -7,13 +7,11 @@ import ButtonPanel from './ButtonPanel';
 
 /* eslint-enable no-unused-vars */
 
-function App() {
-  return (
+const App = () => (
       <React.Fragment>
         <Display result ='Milestone 2 (No calculation till now)'/>
         <ButtonPanel />
       </React.Fragment>
-  );
-}
+);
 
 export default App;
