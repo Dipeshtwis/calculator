@@ -25,3 +25,12 @@ code {
     'Courier New',
     monospace;
 }
+
+.calc {
+  width: 500px;
+}
+
+.btn-show {
+  display: flex;
+  justify-content: space-around;
+}

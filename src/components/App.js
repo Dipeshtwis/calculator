@@ -10,7 +10,7 @@ import ButtonPanel from './ButtonPanel';
 function App() {
   return (
       <React.Fragment>
-        <Display result ='a'/>
+        <Display result ='Milestone 2 (No calculation till now)'/>
         <ButtonPanel />
       </React.Fragment>
   );
