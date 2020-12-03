@@ -8,12 +8,12 @@ import ButtonPanel from './ButtonPanel';
 /* eslint-enable no-unused-vars */
 
 function App() {
-  	return (
+  return (
       <React.Fragment>
-        <Display />
+        <Display result ='a'/>
         <ButtonPanel />
       </React.Fragment>
-    );
+  );
 }
 
 export default App;
