@@ -1,41 +1,42 @@
 /* eslint-disable no-unused-vars */
 import Button from './Button';
 
-/* eslint-enable no-unused-vars */
-const ButtonPanel = () => (
-    <div class = "calc">
-      <div className = "btn-show">
-      < Button name = 'AC'/>
-      < Button name = '+/-'/>
-      < Button name = '%'/>
-      < Button name = '÷'/>
+const signCalc = (sign) => < Button name = {sign} />;
+
+const ButtonPanel = () => {
+  const group1 = ['AC', '+/-', '%', '÷'];
+  const group2 = ['7', '8', '9', 'X'];
+  const group3 = ['4', '5', '6', '-'];
+  const group4 = ['1', '2', '3', '+'];
+  const group5 = ['0', '.', '='];
+  const sign1 = group1.map(signCalc);
+  const sign2 = group2.map(signCalc);
+  const sign3 = group3.map(signCalc);
+  const sign4 = group4.map(signCalc);
+  const sign5 = group5.map(signCalc);
+  return (
+    <div className = "calc">
+       <div className = "btn-show">
+          {sign1}
+       </div>
+
+       <div className = "btn-show">
+          {sign2}
+       </div>
+
+       <div className = "btn-show">
+          {sign3}
+       </div>
+
+       <div className = "btn-show">
+          {sign4}
+       </div>
+
+       <div className = "btn-show">
+          {sign5}
+       </div>
       </div>
-
-    <div className = "btn-show">
-      < Button name = '7'/>
-      < Button name = '8'/>
-      < Button name = '9'/>
-      < Button name = 'X'/>
-    </div>
-    <div className = "btn-show">
-      < Button name = '4'/>
-      < Button name = '5'/>
-      < Button name = '6'/>
-      < Button name = '-'/>
-    </div>
-    <div className = "btn-show">
-      < Button name = '1'/>
-      < Button name = '2'/>
-      < Button name = '3'/>
-      < Button name = '+'/>
-    </div>
-    <div className = "btn-show">
-      < Button name = '0'/>
-      < Button name = '.'/>
-      < Button name = '='/>
-      < Button name = ''/>
-    </div>
-    </div>
-);
-
+  );
+};
+/* eslint-enable no-unused-vars */
 export default ButtonPanel;
