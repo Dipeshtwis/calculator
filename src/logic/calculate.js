@@ -1,0 +1,3 @@
+const calcultor = (object, name) => {
+  
+}
