@@ -1,8 +1,9 @@
 import Big from 'big.js';
+
 const operate = (numberOne, numberTwo, operation) => {
   let res;
-  let num1 = new Big(numberOne);
-  let num2 = new Big(numberTwo);
+  const num1 = new Big(numberOne);
+  const num2 = new Big(numberTwo);
   if (operation === '-') {
     res = num1.minus(num2);
   } else if (operation === '+') {
