@@ -1,5 +1,5 @@
 const calculate = (CalaculatorObject, name) => {
-  const { total, next, operation } = CalaculatorObject;
+  let { total, next, operation } = CalaculatorObject;
   if (name == '+/-') {
   	total *= -1
   	next *= -1
