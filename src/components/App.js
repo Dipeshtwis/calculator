@@ -10,23 +10,34 @@ import calculate from '../logic/calculate';
 
 class App extends React.Component {
   constructor(props) {
-  	super(props);
-  	this.state = {
-  	  total = null;
-  	  next = null;
-  	  operation = null;
-    }
+    super(props);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
     this.handleClick = this.handleClick.bind(this);
   }
 
+  handleClick = (buttonName) => {
+    const CalaculatorObjectState = this.state;
+    const result = calculate(CalaculatorObjectState, buttonName);
+    this.setState({
+      total: result.total ? result.total : null,
+      next: result.next ? result.next : null,
+      operation: result.operation ? result.operation : null,
+    });
+  }
+
   render() {
+    const { total, next } = this.state;
     return (
       <React.Fragment>
-        <Display result ='Milestone 5'/>
+        <Display result = { total || next || '0' } />
         <ButtonPanel />
       </React.Fragment>
     );
   }
-} 
+}
 
 export default App;
