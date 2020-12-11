@@ -12,7 +12,7 @@ const calculate = (CalaculatorObject, name) => {
   } else if (name === '+/-') {
     (total *= -1).toString();
     if (next) (next *= -1).toString();
-  } else if (name === '%' && (total !== null || total !== undefined)) {
+  } else if (name === '%') {
     (total /= 100).toString();
     operation = null;
   }
