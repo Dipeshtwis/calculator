@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
 import Button from './Button';
 
-const signCalc = (sign) => < Button name = {sign} />;
+const signCalc = (sign) => < Button name = {sign} clickHandler={sign} />;
 
-const ButtonPanel = () => {
+const ButtonPanel = ({ clickHandler }) => {
   const group1 = ['AC', '+/-', '%', '÷'];
   const group2 = ['7', '8', '9', 'X'];
   const group3 = ['4', '5', '6', '-'];

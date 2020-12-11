@@ -34,7 +34,7 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <Display result = { total || next || '0' } />
-        <ButtonPanel />
+        <ButtonPanel clickHandler = {this.handleClick} />
       </React.Fragment>
     );
   }
