@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Display = (props = '0') => <h1>{props.result}</h1>;
+const Display = (props) => <h1>{props.result || props.next || '0'}</h1>;
 
 Display.propTypes = {
   result: PropTypes.string,

@@ -20,8 +20,8 @@ class App extends React.Component {
   }
 
   handleClick = (buttonName) => {
-    const CalaculatorObjectState = this.state;
-    const result = calculate(CalaculatorObjectState, buttonName);
+    const { total, next, operation } = this.state;
+    const result = calculate({ total, next, operation }, buttonName);
     this.setState({
       total: result.total,
       next: result.next,
@@ -33,7 +33,7 @@ class App extends React.Component {
     const { total, next } = this.state;
     return (
       <React.Fragment>
-        <Display result = { total || next || '0' } />
+        <Display result={total} next ={next} />
         <ButtonPanel clickHandler = { this.handleClick } />
       </React.Fragment>
     );
