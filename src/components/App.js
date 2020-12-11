@@ -8,11 +8,25 @@ import calculate from '../logic/calculate';
 
 /* eslint-enable no-unused-vars */
 
-const App = () => (
+class App extends React.Component {
+  constructor(props) {
+  	super(props);
+  	this.state = {
+  	  total = null;
+  	  next = null;
+  	  operation = null;
+    }
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  render() {
+    return (
       <React.Fragment>
-        <Display result ='Milestone 4 (logic implemented)'/>
+        <Display result ='Milestone 5'/>
         <ButtonPanel />
       </React.Fragment>
-);
+    );
+  }
+} 
 
 export default App;
