@@ -34,3 +34,9 @@ code {
   display: flex;
   justify-content: space-around;
 }
+
+button {
+  width: 120px;
+  padding: 1rem;
+  background-color: grey;
+}
