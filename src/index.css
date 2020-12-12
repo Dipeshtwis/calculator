@@ -27,9 +27,9 @@ code {
 }
 
 .main {
-  text-align: center;
   font-size: 28px;
   font-weight: 600;
+  padding: 2rem;
 }
 .root {
   width: 500px;
@@ -74,4 +74,23 @@ button {
 
 .row4 .number:first-child {
   width: 250px;
+}
+
+@media screen and (max-width: 550px) {
+  .main {
+    text-align: center;
+  }
+  
+  .root,
+  .calc {
+    width: 352px;
+  }
+
+  button {
+    width: 88px;
+  }
+
+  .row4 .number:first-child {
+    width: 176px;
+  }
 }
