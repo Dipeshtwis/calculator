@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+import PropTypes from 'prop-types';
 import Button from './Button';
 
 const mapBtnsToPanel = (arr, clickHandler) => {
@@ -38,5 +38,9 @@ const ButtonPanel = ({ clickHandler }) => {
       </div>
   );
 };
-/* eslint-enable no-unused-vars */
+
+ButtonPanel.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
+};
+
 export default ButtonPanel;

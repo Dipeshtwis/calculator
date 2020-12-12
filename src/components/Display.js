@@ -4,6 +4,7 @@ const Display = (props) => <h2 className ='input-value'>{props.result || props.n
 
 Display.propTypes = {
   result: PropTypes.string,
+  next: PropTypes.string,
 };
 
 export default Display;

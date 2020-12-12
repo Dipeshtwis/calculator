@@ -9,6 +9,8 @@ const Button = (props) => {
 
 Button.propTypes = {
   name: PropTypes.string,
+  clickHandler: PropTypes.func.isRequired,
+  color: PropTypes.string,
 };
 
 export default Button;
