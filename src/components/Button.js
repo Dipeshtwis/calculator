@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 /* eslint-disable no-unused-vars */
 const Button = (props) => {
-  const a = 9;
+  const inc = 0;
   return (
-    <button className = {props.name} onClick = {props.clickHandler}>{props.name}</button>
+    <button className={props.color === 'orange' ? 'operand' : 'number'} onClick = {props.clickHandler}>{props.name}</button>
   );
 };
 
