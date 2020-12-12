@@ -27,7 +27,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Project Screenshot <a name = "sc"></a>
 
-![GUI](src/assets/img/mile2.png)
+![GUI](src/assets/img/mile5.png)
 
 
 ## Live Demo Link <a name = "ll"></a>
