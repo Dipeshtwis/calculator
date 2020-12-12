@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+/* eslint-disable no-unused-vars */
 import Button from './Button';
 
 const mapBtnsToPanel = (arr, clickHandler) => {
