@@ -1,11 +1,9 @@
 /* eslint-disable no-unused-vars */
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
-
 /* eslint-enable no-unused-vars */
 
 class App extends React.Component {
