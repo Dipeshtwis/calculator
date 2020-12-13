@@ -26,11 +26,72 @@ code {
     monospace;
 }
 
+.main {
+  font-size: 28px;
+  font-weight: 600;
+  padding: 2rem;
+}
+
+.root {
+  width: 500px;
+  text-align: right;
+  border: 4px solid grey;
+  border-radius: 0.5rem;
+}
+
 .calc {
   width: 500px;
 }
 
-.btn-show {
-  display: flex;
-  justify-content: space-around;
+.input-value {
+  margin-right: 7px;
+}
+
+button {
+  width: 125px;
+  padding: 1rem;
+  background-color: grey;
+}
+
+.btn2 {
+  background-color: red;
+}
+
+.number {
+  background-color: #c0c0c0;
+}
+
+.number:hover {
+  background-color: #d3d3d3;
+}
+
+.operand {
+  background-color: #ff5e13;
+}
+
+.operand:hover {
+  background-color: #cf5e13;
+}
+
+.row4 .number:first-child {
+  width: 250px;
+}
+
+@media screen and (max-width: 550px) {
+  .main {
+    text-align: center;
+  }
+
+  .root,
+  .calc {
+    width: 352px;
+  }
+
+  button {
+    width: 88px;
+  }
+
+  .row4 .number:first-child {
+    width: 176px;
+  }
 }
