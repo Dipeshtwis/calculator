@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Home = () => (
     <div className = "root-home">
       <h1>Welcome to our Page!</h1>
