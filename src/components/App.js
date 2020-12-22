@@ -15,7 +15,9 @@ const App = () => {
 
   return (
     <React.Fragment>
+    <div>
     <h1>Let's do some math!</h1>
+    </div>
     <div className = "root-calc">
       <Display result={total} next ={next} />
       <ButtonPanel clickHandler = { handleClick } />

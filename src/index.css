@@ -2,6 +2,7 @@
   margin: 0;
   list-style: none;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -49,6 +50,12 @@ code {
 
 .list li {
   padding: 5px;
+}
+
+.root {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 .root-home {
