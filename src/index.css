@@ -32,7 +32,12 @@ code {
   padding: 1rem;
 }
 
-.root {
+.root-home {
+  text-align: center;
+  padding: 40px;
+}
+
+.root-calc {
   width: 700px;
   text-align: right;
   border: 4px solid grey;

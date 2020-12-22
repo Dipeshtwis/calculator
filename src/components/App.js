@@ -15,8 +15,10 @@ const App = () => {
 
   return (
     <React.Fragment>
+    <div className = "root-calc">
       <Display result={total} next ={next} />
       <ButtonPanel clickHandler = { handleClick } />
+      </div>
     </React.Fragment>
   );
 };
