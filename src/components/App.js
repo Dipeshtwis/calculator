@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
-/* eslint-enable no-unused-vars */
 
 const App = () => {
   const [state, setState] = useState({ total: null, next: null, operation: null });
