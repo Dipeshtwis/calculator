@@ -12,7 +12,8 @@ const mapBtnsToPanel = (arr, clickHandler) => {
       } else {
         color = 'grey';
       }
-      return (<Button color={color} name={curr} key={curr} clickHandler={() => clickHandler(curr)} />);
+      return (<Button color={color} name={curr} key={curr}
+        clickHandler={() => clickHandler(curr)} />);
     },
   );
   return res;
