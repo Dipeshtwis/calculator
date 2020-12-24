@@ -27,7 +27,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Project Screenshot <a name = "sc"></a>
 
-![GUI](src/assets/img/mile5.png)
+
+## Home Page
+
+![GUI](src/assets/img/math_home.png)
+
+## Calculator Page
+
+![GUI](src/assets/img/math_calculator.png)
+
+## Quote Page
+
+![GUI](src/assets/img/math_quote.png)
 
 
 ## Live Demo Link <a name = "ll"></a>
