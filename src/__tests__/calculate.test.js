@@ -60,4 +60,18 @@ describe('calculator logic', () => {
     expect(res).toHaveProperty('total');
     expect(res.total).toEqual('25.');
   });
+
+  it('When a btn of 4 is clicked, and total and operation is not null, next is null, it returns a next = "4"', done => {
+    const result = calculate({ total: 25, next: null, operation: 'x' }, '4');
+    expect(result).toHaveProperty('next');
+    expect(result.next).toEqual('4');
+    done();
+  });
+
+  it('When a btn of 5 is clicked, and total, operation and next is not null, it returns a next = "45"', done => {
+    const res = calculate({ total: 25, next: 4, operation: '+' }, '5');
+    expect(res).toHaveProperty('next');
+    expect(res.next).toEqual('45');
+    done();
+  });
 });
