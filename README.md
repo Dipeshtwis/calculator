@@ -27,7 +27,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Project Screenshot <a name = "sc"></a>
 
-![GUI](src/assets/img/mile5.png)
+
+## Home Page
+
+![GUI](src/assets/img/math_home.png)
+
+## Calculator Page
+
+![GUI](src/assets/img/math_calculator.png)
+
+## Quote Page
+
+![GUI](src/assets/img/math_quote.png)
 
 
 ## Live Demo Link <a name = "ll"></a>
@@ -53,7 +64,7 @@ $ cd calculator
 To run on the local server
 
 ~~~bash
-
+$ npm install react-scripts
 $ npm start
 ~~~
 
@@ -62,6 +73,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+## To Test the calculator
+
+~~~bash
+
+$ npm test
+
+~~~
 
 
 ## ✒️  Authors <a name = "author"></a>

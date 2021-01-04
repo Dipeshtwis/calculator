@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 body {
   margin: 0;
   font-family:
@@ -29,28 +36,60 @@ code {
 .main {
   font-size: 28px;
   font-weight: 600;
-  padding: 2rem;
+  padding: 1rem;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list {
+  display: inline-flex;
+}
+
+.list li {
+  padding: 5px;
 }
 
 .root {
-  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.root-home {
+  text-align: center;
+  padding: 40px;
+}
+
+.root-calc {
+  width: 705px;
   text-align: right;
   border: 4px solid grey;
   border-radius: 0.5rem;
 }
 
 .calc {
-  width: 500px;
+  width: 700px;
 }
 
 .input-value {
-  margin-right: 7px;
+  margin-right: 15px;
+  height: 100px;
+  font-size: 48px;
+}
+
+.para {
+  padding: 25px;
 }
 
 button {
-  width: 125px;
+  width: 175px;
+  height: 100px;
   padding: 1rem;
   background-color: grey;
+  border: 1px solid grey;
 }
 
 .btn2 {
@@ -74,7 +113,7 @@ button {
 }
 
 .row4 .number:first-child {
-  width: 250px;
+  width: 350px;
 }
 
 @media screen and (max-width: 550px) {
